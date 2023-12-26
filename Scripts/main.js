@@ -77,3 +77,36 @@ menuBurger.addEventListener('click', (e) => {
         menuBurger.classList.remove('showBurger')
     }
 })
+$(function () {
+    // Owl Carousel
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+        items: 4,
+        margin: 10,
+        loop: true,
+        nav: true,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 100,
+        autoplayHoverPause: true,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1,
+                loop: true,
+                nav: false
+            },
+            600: {
+                items: 2,
+                loop: true,
+                nav: false
+            },
+            1000: {
+                items: 4,
+                nav: true,
+                loop: true,
+            }
+        }
+
+    });
+});
